@@ -59,6 +59,7 @@ async function fetchData(): Promise<string> {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve('Data has been fetched');
-        }, 2000);
+            console.log('📦 Data has been fetched');
+        }, 0);
     });
 }
