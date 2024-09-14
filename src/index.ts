@@ -56,5 +56,9 @@ console.log('⌚ Time:', getTime());
 
 //Async Functions
 async function fetchData(): Promise<string> {
-    return 'Data';
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('Data has been fetched');
+        }, 2000);
+    });
 }
