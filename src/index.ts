@@ -52,3 +52,9 @@ function getTime(): number {
     return date;
 }
 console.log('⌚ Time:', getTime());
+
+
+//Async Functions
+async function fetchData(): Promise<string> {
+    return 'Data';
+}
